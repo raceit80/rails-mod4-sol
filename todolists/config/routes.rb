@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  
+  root to: "todo_lists#index"
 
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -9,6 +11,8 @@ Rails.application.routes.draw do
     resources :todo_items
   end  
   
-  root to: "todo_lists#index"
+  
 
 end
+
+
